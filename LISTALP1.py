@@ -15,3 +15,30 @@
 # qtd=int(input("Digite quantas vezes o nome será impresso:"))
 # for i in range(qtd):
 #     print(i, nome)
+# #5
+# nome=input("Insira o seu nome:")
+# qtd=int(input("Digite quantas vezes o nome será impresso:"))
+# for i in range(1, qtd+1):
+#     print(nome, i,"° vez")
+# #6
+# inicio=int(input("Insira o numero inicial:"))
+# qtd=int(input("Digite a quantidade de numeros impressos:"))
+# for i in range(qtd):
+#     print(inicio+i*2)
+# #7
+# inicio=int(input("Insira o numero inicial:"))
+# qtd=int(input("Digite a quantidade de numeros impressos:"))
+# for i in range(qtd):
+#     print(inicio-i*2)
+# #8
+# num=int(input("Insira o numero inicial: "))
+# qtd=int(input("Digite quantos números serão impressos: "))
+# varia=int(input("Insira a variação:"))
+# for i in range(qtd):
+#     print(num+i*varia)
+# #10
+# num=int(input("Insira o numero inicial: "))
+# qtd=int(input("Digite quantos números serão impressos: "))
+# varia=int(input("Insira a variação:"))
+# for i in range(qtd):
+#     print(f"{i+1}º termo:{num+i*varia} - de um total de {qtd} termos.")
