@@ -1,10 +1,10 @@
-#1
+# 1
 n=0
 for i in range(10):
   n2=int(input("Digite um número:"))
   n+=n2
 print(f"A soma de todos os números é {n}")
-#2
+# 2
 n=0
 pares=0
 for i in range(20):
@@ -13,7 +13,7 @@ for i in range(20):
     pares+=1
   n=0
 print(f"Foram inseridos {pares} números pares")
-#2.1
+# 2.1
 import random
 n=0
 pares=0
@@ -24,7 +24,7 @@ for i in range(20):
     pares+=1
   n=0
 print(f"Foram inseridos {pares} números pares")
-#3
+# 3
 soma=0
 n=0
 for i in range(5):
@@ -32,13 +32,13 @@ for i in range(5):
   soma+=n
 media=soma/5
 print(f"A média das idades inseridas é {media}")
-#4
+# 4
 n=int(input("Insira um número inteiro e positivo:"))
 fatorial=1
 for i in range(n):
     fatorial=fatorial*(n-i)
 print(f"O fatorial de {n} é {fatorial}")
-#5
+# 5
 produto=1
 for i in range(10):
     if i%2==1:
@@ -82,9 +82,66 @@ for i in range(10):
         maior=n
 print(f"O maior número inserido foi {maior}")
 # 11
-menor=9999999
-for i in range (5):
+idade=int(input("Insira uma idade:"))
+menor=idade
+for i in range (4):
     idade = int(input("Insira uma idade:"))
     if idade<menor:
         menor=idade
 print(f"A menor idade inserida foi {menor}")
+# 12
+import random
+#n=int(input("Insira um número:"))
+num= random.randint(-10000,10000)
+maior=menor=num
+for i in range(7):
+    # num=int(input("Insira um número:"))
+    num=random.randint(-10000,10000)
+    if num > maior:
+        maior=num
+    elif num<menor:
+        menor=num
+dif= maior-menor
+print (f"A diferença entre o maior ({maior}) e o menor ({menor}) número inseridos é {dif}")
+# 13 INCOMPLETA
+n=float(input("Insira um número:"))
+pertode0=n
+for i in range(7):
+    n = float(input("Insira um número:"))
+    if n
+
+
+    print(pertode0)
+print(f"O número mais perto de 0 é {pertode0}")
+# 14
+import random
+# nota=float(input("Insira a nota:"))
+nota=round(random.uniform(0,10),2)
+print(nota)
+maior=nota
+for i in range(14):
+    # nota=float(input("Insira a nota:"))
+    nota=round(random.uniform(0,10),2)
+    print(nota)
+    if nota>maior:
+        maior=nota
+print(f"A maior nota da turma foi {maior}")
+# 15
+num=float(input("Insira um número:"))
+menor=num
+for i in range (11):
+    num = float(input("Insira um número:"))
+    if num<menor:
+        menor=num
+print(f"O menor valor inserido foi {menor}")
+# 16
+import random
+num= round(random.uniform(-20,45),2)
+maior=menor=num
+for i in range(7):
+    num=round(random.uniform(-20,45),2)
+    if num > maior:
+        maior=num
+    elif num<menor:
+        menor=num
+print(f"A menor temperatura foi {menor} e a maior foi {maior}.")
