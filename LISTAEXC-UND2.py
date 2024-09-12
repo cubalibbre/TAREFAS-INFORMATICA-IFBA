@@ -177,3 +177,21 @@ else:
     print(f"A média de filhos foi: {mediafilhos}")
     print(f"O maior salário foi: {maiorsalario}")
     print(f"A porcentagem de salários abaixo de R$150,00 foi: {porcentagemsalbaixo}")
+# 19
+linhas = int (input("digite quantas linhas devem ser impressas:"))
+for i in range (1, linhas+1):
+    for j in range (i):
+        print(i, end="") #o end muda o fim do print para que ele continue na mesma linha no próximo print do loop
+    print("") #esse print vazio faz com que a linha quebre no fim do loop
+# 20
+linhas = int (input("digite quantas linhas devem ser impressas:"))
+for i in range (linhas):
+    for j in range (linhas):
+        print("*", end="")
+    print("")
+# 21
+linhas = int (input("digite quantas linhas devem ser impressas:"))
+for i in range (1,linhas+1):
+    for j in range (i):
+        print("*", end="")
+    print("")
