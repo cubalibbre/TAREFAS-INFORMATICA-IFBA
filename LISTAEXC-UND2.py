@@ -103,16 +103,18 @@ for i in range(7):
         menor=num
 dif= maior-menor
 print (f"A diferença entre o maior ({maior}) e o menor ({menor}) número inseridos é {dif}")
-# 13 INCOMPLETA
-n=float(input("Insira um número:"))
-pertode0=n
-for i in range(7):
-    n = float(input("Insira um número:"))
-    if n
-
-
-    print(pertode0)
-print(f"O número mais perto de 0 é {pertode0}")
+# 13
+num=int(input("Insira um número:"))
+if num<0: 
+        num = num * (-1)
+pertode0=num
+for i in range (7):
+    num=int(input("Insira um número:"))
+    if num<0: 
+        num = num * (-1)
+    if num<pertode0:
+         pertode0=num
+print(f"O número inserido mais próximo de 0 está a uma distância de {pertode0} intervalos de 0.")
 # 14
 import random
 # nota=float(input("Insira a nota:"))
