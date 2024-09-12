@@ -167,7 +167,8 @@ for i in range(int(10e8)): #inicia as entradas
         salariosbaixo +=1
 if numentrevistados == 0:
     print("Não houveram entrevistados.")
-else:print(f"A média salarial foi: {mediasalarial}")
+else:
+    mediasalarial= somasalarios/numentrevistados
     mediafilhos= somafilhos/numentrevistados    
     porcentagemsalbaixo = salariosbaixo/numentrevistados * 100
     print(f"A média salarial foi: {mediasalarial}")
