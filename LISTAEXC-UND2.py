@@ -145,3 +145,32 @@ for i in range(7):
     elif num<menor:
         menor=num
 print(f"A menor temperatura foi {menor} e a maior foi {maior}.")
+# 17
+somasalarios=0
+somafilhos=0
+numentrevistados=0
+maiorsalario=0
+salariosbaixo=0
+for i in range(int(10e8)): #inicia as entradas
+    salario = float(input("Digite o valor do salário (ou um salário negativo para encerrar):"))
+    num_filhos = int(input("Digite o número de filhos:"))
+    if salario < 0: #condição para que termine a leitura das entradas
+        break
+    if num_filhos > 100: #considerando que isso é impossível, se acontecer, pula o resto dos testes e vai pra próxima execução do loop
+        continue
+    somasalarios += salario
+    somafilhos += num_filhos
+    numentrevistados += 1
+    if salario > maiorsalario:
+        maiorsalario = salario
+    if salario < 150:
+        salariosbaixo +=1
+if numentrevistados == 0:
+    print("Não houveram entrevistados.")
+else:print(f"A média salarial foi: {mediasalarial}")
+    mediafilhos= somafilhos/numentrevistados    
+    porcentagemsalbaixo = salariosbaixo/numentrevistados * 100
+    print(f"A média salarial foi: {mediasalarial}")
+    print(f"A média de filhos foi: {mediafilhos}")
+    print(f"O maior salário foi: {maiorsalario}")
+    print(f"A porcentagem de salários abaixo de R$150,00 foi: {porcentagemsalbaixo}")
