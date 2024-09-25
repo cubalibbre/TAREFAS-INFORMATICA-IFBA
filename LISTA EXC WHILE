@@ -40,3 +40,37 @@ senha=input("Insira a senha:")
 while senha!="1234":
     senha=input("Senha incorreta. Insira a senha:")
 print("Senha inserida.")
+
+# 6
+contadordeA=0
+palavra=input("Insira uma palavra:")
+while palavra!="fim":
+    for i in palavra:
+        if i=="a" or i=="A":
+            contadordeA+=1
+    palavra=input("Insira uma palavra:")
+print(f"Foram inseridos {contadordeA} letras A ao todo.")
+
+# 7
+num=int(input("Insira um número:"))
+produto=1
+while num!=0:
+    for i in range(1,num+1):
+        if i%2==0:
+            produto=produto*i
+    print(f"O produto de todos os números pares entre 1 e {num} é {produto}")
+    produto=1
+    num=int(input("Insira um número:"))
+print("Fim do programa.")
+
+# 8
+num=int(input("Insira um número:"))
+soma=num
+contador=1
+while soma<1000:
+    num=int(input("Insira um número:"))
+    soma+=num
+    contador+=1
+print(f"A soma do(s) {contador} números inseridos é {soma}")
+
+
