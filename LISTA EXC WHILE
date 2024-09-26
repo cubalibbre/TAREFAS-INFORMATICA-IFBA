@@ -73,4 +73,27 @@ while soma<1000:
     contador+=1
 print(f"A soma do(s) {contador} números inseridos é {soma}")
 
+# 9
+contador=0
+soma=0
+nota=int(input("Insira uma nota:"))
+while nota>=0 and nota<=10:
+    contador+=1
+    soma+=nota
+    nota=int(input("Insira uma nota:"))
+media=soma/contador
+print(f"A média das notas válidas foi {media}")
 
+# 15
+contador=0
+contador500=0
+soma=0
+nota=int(input("Insira uma nota:"))
+while nota>=0 and nota<=1000:
+    contador+=1
+    soma+=nota
+    if nota>500:
+        contador500+=1
+    nota=int(input("Insira uma nota:"))
+media=soma/contador
+print(f"{contador500} alunos tiraram uma nota acima de 500. A média das notas válidas foi {media}")
