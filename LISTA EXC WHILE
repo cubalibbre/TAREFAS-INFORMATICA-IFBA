@@ -84,6 +84,60 @@ while nota>=0 and nota<=10:
 media=soma/contador
 print(f"A média das notas válidas foi {media}")
 
+# 10
+vogais=0
+palavra=input("Insira uma palavra ou 'pare' para encerrar:")
+while palavra!="pare":
+    for i in palavra:
+        if i=="a" or i=="e" or i=="i" or i=="o" or i=="u" :
+            vogais+=1
+    palavra=input("Insira uma palavra:")
+print(f"Foram inseridos {vogais} vogais ao todo.")
+
+# 11
+import random
+num=random.randint(1,50)
+print(num)
+chute=int(input("Insira o número que você acha que o programa acabou de sortear:"))
+while chute!=num:
+    chute=int(input("Incorreto! Insira o número que você acha que o programa sorteou:"))
+print("Parabéns! Você acertou")
+
+# 12
+pares=0
+impares=0
+num=int(input("Digite um número ou 0 para finalizar:"))
+while num!=0:
+    if num%2==1:
+        impares+=1
+    else:
+        pares+=1
+    num=int(input("Digite um número ou 0 para finalizar:"))
+print(f"Foram digitados {impares} numeros impares e {pares} números pares.")
+
+# 13
+num=int(input("Insira um número:"))
+produto=num
+contador=1
+while produto<1000:
+    num=int(input("Insira um número:"))
+    produto=produto*num
+    contador+=1
+print(f"O produto do(s) {contador} números inseridos é {produto}")
+
+# 14
+num=int(input("Insira um número:"))
+counter=0
+while num!=0:
+    for i in range(1,num+1):
+        if num%i==0:
+            counter+=1
+            print(i)
+    print(f"O número {num} tem {counter} divisores.")
+    counter=0
+    num=int(input("Insira um número:"))
+print("Programa encerrado.")
+
 # 15
 contador=0
 contador500=0
@@ -97,3 +151,59 @@ while nota>=0 and nota<=1000:
     nota=int(input("Insira uma nota:"))
 media=soma/contador
 print(f"{contador500} alunos tiraram uma nota acima de 500. A média das notas válidas foi {media}")
+
+# 16
+lim=int(input("O programa vai sortear um número entre 0 e:"))
+import random
+num=random.randint(0,lim)
+print(num)
+counter=0
+chute=int(input("Insira o número que você acha que o programa acabou de sortear:"))
+while chute!=num:
+    counter+=1
+    chute=int(input("Incorreto! Insira o número que você acha que o programa sorteou:"))
+print(f"Parabéns! Você acertou. Foram {counter} tentativas incorretas.")
+
+# 17
+operaçao=int(input("Insira a operação: \n1 para soma \n2 para subtração \n3 para divisão \n4 para multiplicação \n5 para sair\n"))
+while operaçao!=5:
+    valor1=float(input("Insira o primeiro valor:"))
+    valor2=float(input("Insira o segundo valor:"))
+    if operaçao==1: #soma
+        saida=valor1+valor2
+    elif operaçao==2: #subtracao
+        saida=valor1-valor2
+    elif operaçao==3: #divisao
+        saida=round(valor1/valor2,3)
+    elif operaçao==4:
+        saida=round(valor1*valor2,3)
+    else:
+        saida="Operaçao inválida"
+    print(f"Resultado: {saida}")
+    operaçao=int(input("Insira a operação: \n1 para soma \n2 para subtração \n3 para divisão \n4 para multiplicação \n5 para sair\n"))
+print("Programa encerrado.")
+
+# 18
+num=int(input("Insira um número positivo, ou negativo para encerrar:"))
+menor=num
+while num>=0:
+    if num<menor:
+        menor=num
+    num=int(input("Insira um número, ou negativo para encerrar:"))
+print(f"O menor número digitado foi {menor}")
+
+# 19
+num=int(input("Insira um número:"))
+soma=0
+while num!=0:
+    for i in range(1,num):
+        if num%i==0:
+            soma+=i
+            print(i)
+    if soma==num:
+        print("O número é perfeito")
+    else:
+        print("O numero não é perfeito")
+    soma=0
+    num=int(input("Insira um número:"))
+print("Programa encerrado.")
