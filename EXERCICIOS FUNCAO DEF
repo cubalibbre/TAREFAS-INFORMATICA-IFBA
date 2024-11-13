@@ -1,0 +1,93 @@
+# FUNÇÃO BOAS VINDAS
+# def boas_vindas(nome):
+#     print(f"Boas vindas, {nome}!")
+# nome=input("Insira seu nome:")
+# boas_vindas(nome)
+
+# FUNÇÃO CONVERSÃO CELSIUS-FAHRENHEIT
+# def celsius_fahrenheit(celsius):
+#     return round((celsius*9/5)+32,2)
+# celsius=float(input("Insira a temperatura em graus celsius:"))
+# fahrenheit=celsius_fahrenheit(celsius)
+# print(f"A temperatura em Fahrenheit é: {fahrenheit}")
+
+# Verificação de Número Par ou Ímpar
+# def par_ou_impar(numero):
+#     if numero%2==0:
+#         return "par"
+#     else:
+#         return "impar"
+# num=int(input("Insira um número:"))
+# verif=par_ou_impar(num)
+# print(verif)
+
+# Média de uma Lista de Números:
+# def media(lista_numeros):
+#     soma=sum(lista_numeros)
+#     if soma==0:
+#         return 0
+#     else:
+#         return soma//len(lista_numeros)
+# listanum=[]
+# qtd=int(input("Quantos numeros serão inseridos? "))
+# for i in range(qtd):
+#     listanum.append(int(input("Insira um valor:")))
+# media=media(listanum)
+# print(f"A média é {media}")
+
+# Contagem de Vogais:
+# def contar_vogais(texto):
+#     vogais=["a","A","e","E","i","I","o","O","u","U"]
+#     counter=0
+#     for i in texto:
+#         if i in vogais:
+#             counter+=1
+#     return counter
+# texto=input("Insira uma palavra:")
+# vogais=contar_vogais(texto)
+# print(f"O texto contem {vogais} vogais")
+
+# Calculadora Simples:
+# operaçao=int(input("Insira:\n1 para soma\n2 para subtração\n3 para multiplicação\n4 para divisão\n:"))
+# def calculadora(a, b, operacao):
+#     if operacao==1:
+#         resultado=a+b
+#     elif operacao==2:
+#         resultado=a-b
+#     elif operacao==3:
+#         resultado=a*b
+#     elif operacao==4:
+#         resultado=a/b
+#     else:
+#         resultado="Operação Inválida"
+#     return resultado
+# num1=float(input("Insira um valor:"))
+# num2=float(input("Insira o segundo valor:"))
+# resultado=calculadora(num1,num2,operaçao)
+# print(resultado)
+
+# Verificação de Número Primo:
+# def eh_primo(n):
+#     for i in range(2,n):
+#         if n%i==0:
+#             return False
+#         else:
+#             return True
+# num=int(input("Insira um valor:"))
+# primo=eh_primo(num)
+# if primo==True:
+#     print("O número é primo")
+# else:
+#     print("O número não é primo")
+
+# Maior e Menor Valor:
+# def maior_e_menor(lista_numeros):
+#     maior=max(lista_numeros)
+#     menor=min(lista_numeros)
+#     return maior, menor
+# listanum=[]
+# qtd=int(input("Quantos numeros serão inseridos? "))
+# for i in range(qtd):
+#     listanum.append(int(input("Insira um valor:")))
+# extremos=maior_e_menor(listanum)
+# print(f"O maior e menor numero são, respectivamente: {extremos}")
