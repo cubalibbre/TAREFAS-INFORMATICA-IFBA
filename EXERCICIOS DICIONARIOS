@@ -35,3 +35,7 @@
 #     livros.update({emprestado:livros[emprestado]-qtd})
 #     emprestimos.update({emprestado:emprestimos[emprestado]+qtd})
 # total=sum(list(emprestimos.values()))
+# total=sum(list(emprestimos.values()))
+# maior=max(emprestimos,key=emprestimos.get)
+# menor=min(livros,key=livros.get)
+# print(f"Total de livros emprestados: {total}\nLivro mais emprestado: {maior}\nLivro com menor estoque disponível: {menor}")
