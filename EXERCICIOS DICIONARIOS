@@ -1,0 +1,37 @@
+# FUNCOES BASICAS DE DICIONARIO
+# estoque={"botas":5,"casacos":5,"meias":4,"luvas":7,"aneis":10}
+# primeiro=list(estoque.items())[0]
+# ultimo=list(estoque.items())[-1]
+# print(primeiro,ultimo)
+# estoque["calças"]=20
+# estoque.update(meias=10)
+# print(estoque)
+# del estoque["casacos"]
+# print(estoque)
+# if 'meias' in estoque:
+#     print("Há meias no estoque")
+# else:
+#     print("Não há meias no estoque")
+# for i in estoque.keys():
+#     estoque.update({i:estoque[i]+10})
+# print(estoque)
+# ORGANIZACAO DE UMA BIBLIOTECA (INCOMPLETO)
+# livros={"Dom Quixote":3,"1984":4,"O Príncipe":6,"O Capital":5,"Os Sertões":2}
+# emprestimos={"Dom Quixote":0,"1984":0,"O Príncipe":0,"O Capital":0,"Os Sertões":0}
+# catalogo=list(livros.keys())
+# emprestado=None
+# while emprestado!="sair":
+#     print(f"O catálogo disponível é: {catalogo}")
+#     emprestado=input("Qual livro será emprestado?")
+#     if emprestado=="sair":
+#         break
+#     elif emprestado not in livros:
+#         print("Livro não encontrado")
+#         continue
+#     qtd=int(input("Quantos exemplares serão pegos?"))
+#     if qtd>livros.get(emprestado):
+#         print("Quantidade não disponível")
+#         continue
+#     livros.update({emprestado:livros[emprestado]-qtd})
+#     emprestimos.update({emprestado:emprestimos[emprestado]+qtd})
+# total=sum(list(emprestimos.values()))
