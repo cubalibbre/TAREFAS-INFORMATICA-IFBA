@@ -72,3 +72,35 @@
 
 # media=media_vendas(vendas)
 # print(media)
+# SISTEMA DE NOTAS INCOMPLETO
+def adicionar(notas,nome):
+#     nota=[]
+#     nota.append(input("Insira, separada por virgulas, as notas do aluno: "))
+#     notas.update({nome:nota})
+#     print('Atualizado:',notas)
+
+# def atualizar(notas,aluno):
+#     if aluno not in notas:
+#         print("Aluno não encontrado.")
+#     else:
+#         nota=input("Insira a nova nota: ")
+#         unidade=int(input("Insira de qual das 3 unidades a nota será alterada:"))
+#         if unidade>3 or unidade<1:
+#             print("Unidade inexistente.")
+#         else:
+#             liste=notas[aluno]
+#             print(liste)
+#             valor=(unidade-1)
+#             print(valor)
+#             liste.remove(valor)
+#             print(liste)
+#             liste.insert((unidade-1),nota)
+#             print(liste)
+
+
+
+
+
+# notas={"João":[8,7,9],"Ana":[7,7,6],"Pedro":[10,5,6]}
+# adicionar(notas,"Dante")
+# atualizar(notas,"Dante")
