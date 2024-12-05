@@ -39,26 +39,36 @@
 # maior=max(emprestimos,key=emprestimos.get)
 # menor=min(livros,key=livros.get)
 # print(f"Total de livros emprestados: {total}\nLivro mais emprestado: {maior}\nLivro com menor estoque disponível: {menor}")
-# ANALISE DE VENDAS
+# ANALISE DE VENDAS USANDO DICIONARIOS
+# def total_de_vendas(lista_vendas):
+#     qtd_vendida=sum(vendido["quantidade"] * (vendido["preço"]) for vendido in lista_vendas)
+#     return qtd_vendida
+# def media_vendas(lista_vendas):
+#     medias = {}
+#     for venda in lista_vendas:
+#         produto = venda['produto']
+#         total_vendas = venda['quantidade'] * venda['preço']
+        
+#         if produto not in medias:
+#             medias[produto] = {'total_vendas': total_vendas, 'quantidade': venda['quantidade']}
+        
+#         else:
+#             medias[produto]['total_vendas'] += total_vendas
+#             medias[produto]['quantidade'] += venda['quantidade']
+    
+#     for produto, dados in medias.items():
+#         medias[produto] = round(dados['total_vendas'] / dados['quantidade'],2)
+#     return medias
 # vendas = [{'produto':'arroz','quantidade':5,'preço':10},
 #     {'produto':'feijao','quantidade':3,'preço':7},
 #     {'produto':'macarrao','quantidade':4,'preço':15},
-#     {'produto':'frango','quantidade':2,'preço':16}
+#     {'produto':'frango','quantidade':2,'preço':16},
+#     {'produto':'frango','quantidade':5,'preço':12},
+#     {'produto':'arroz','quantidade':1,'preço':12},
 #     ]
-# def total_de_vendas(lista_vendas):
-#     return sum(vendido["quantidade"] for vendido in lista_vendas)
-# def media_vendas(lista_vendas, produto):
-#     total_preço=0
-#     total_quantidade=0
-#     for venda in lista_vendas:
-        
-#         if venda['produto'] == produto:
-#             total_preço += venda['preço'] * venda['quantidade']
-#             total_quantidade += venda['quantidade']
-#     return total_preço/total_quantidade
 
 # total=total_de_vendas(vendas)
 # print(total)
 
-# media=media_vendas(vendas,'arroz')
+# media=media_vendas(vendas)
 # print(media)
